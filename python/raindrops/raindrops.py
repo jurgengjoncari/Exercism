@@ -6,8 +6,7 @@ def convert(number):
         result += "Plang"
     if number % 7 == 0:
         result += "Plong"
-    elif number % 3 != 0 and number % 5 != 0 and number % 7 != 0:
-        result = str(number)
-    return result
-
-convert(21)
+    if result == "":
+        return str(number)
+    else:
+        return result
